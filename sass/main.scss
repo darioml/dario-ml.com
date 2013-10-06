@@ -1,0 +1,49 @@
+$textcolor: #444;
+$textcolorlight: lighten;
+$headercolor: darken($textcolor, 10); 
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', 'Trade Gothic W01 Light', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-weight: 300;
+
+    #container {
+        .profile {
+            padding: 20px 10px 10px;
+            color: $textcolor;
+            position: absolute;
+            .selfie {
+                max-width: 70%;
+                margin: auto auto;
+                img {
+                    max-width: 100%;
+                    box-shadow: 0 0 5px 0 $textcolor;
+                }
+            }
+            .passport {
+                text-align: center;
+                margin-top: 0px;
+                .name{
+                    font-size: 25px;
+                }
+                .subtext {
+                    color: lighten($textcolor, 5);
+                    font-size: 15px;
+                }
+                .social {
+                    i {
+                        color: lighten($textcolor, 15);
+                    }
+                    margin-top: 10px;
+                    font-size: 35px;
+                    letter-spacing: 20px;
+                }
+            }
+        }
+    }
+}
+
+.tinytext {
+    font-size: 10px;
+}

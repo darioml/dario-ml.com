@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', 'Trade Gothic W01 Light', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300; }
+  body #container .profile {
+    padding: 20px 10px 10px;
+    color: #444444;
+    position: absolute; }
+    body #container .profile .selfie {
+      max-width: 70%;
+      margin: auto auto; }
+      body #container .profile .selfie img {
+        max-width: 100%;
+        box-shadow: 0 0 5px 0 #444444; }
+    body #container .profile .passport {
+      text-align: center;
+      margin-top: 0px; }
+      body #container .profile .passport .name {
+        font-size: 25px; }
+      body #container .profile .passport .subtext {
+        color: #515151;
+        font-size: 15px; }
+      body #container .profile .passport .social {
+        margin-top: 10px;
+        font-size: 35px;
+        letter-spacing: 20px; }
+        body #container .profile .passport .social i {
+          color: #6a6a6a; }
+
+.tinytext {
+  font-size: 10px; }
