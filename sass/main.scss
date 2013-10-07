@@ -2,20 +2,26 @@ $textcolor: #444;
 $textcolorlight: lighten;
 $headercolor: darken($textcolor, 10); 
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', 'Trade Gothic W01 Light', Helvetica, Arial, 'Lucida Grande', sans-serif;
     font-weight: 300;
-
+    //background: #f0f0f0;
     #container {
         .profile {
+            background: #fff;
             padding: 20px 10px 10px;
+            //box-shadow: 0 0 5px 0 $textcolor;
             color: $textcolor;
-            position: absolute;
             .selfie {
                 max-width: 70%;
                 margin: auto auto;
+                text-align: center;
                 img {
                     max-width: 100%;
                     box-shadow: 0 0 5px 0 $textcolor;
@@ -30,20 +36,41 @@ body {
                 .subtext {
                     color: lighten($textcolor, 5);
                     font-size: 15px;
+                    .tinytext {
+                        padding-top: 5px;
+                    }
                 }
                 .social {
                     i {
                         color: lighten($textcolor, 15);
                     }
+                    a, a:visited {
+                        text-decoration: none;
+                        margin: 0 10px;
+                    }
                     margin-top: 10px;
                     font-size: 35px;
-                    letter-spacing: 20px;
                 }
+            }
+        }
+    }
+
+    #content {
+        padding: 20px 20px;
+        .posts {
+            h2 {
+                border-bottom: thin solid lighten($textcolor, 50);
+                padding-bottom: 15px;
+                margin-bottom: 10px;
+            }
+            .post {
+                font-size: 18px;
+                padding: 15px 0;
             }
         }
     }
 }
 
 .tinytext {
-    font-size: 10px;
+    font-size: 12px;
 }
