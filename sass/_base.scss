@@ -1,0 +1,45 @@
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+.tinytext {
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', 'Trade Gothic W01 Light', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-weight: 300;
+    background: #f0f0f0;
+}
+
+
+#content {
+    padding: 20px 20px;
+
+    .project, .activity {
+        font-size: 18px;
+        padding: 10px 0;
+        color: #555;
+    }
+    .posts {
+        h2 {
+        }
+        .post {
+            font-size: 18px;
+            padding: 10px 0;
+        }
+    }
+
+    .footer {
+        margin-bottom: 30px;
+        margin-top: 10px;
+        color: $textcolorlight;
+    }
+}

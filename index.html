@@ -1,15 +1,50 @@
 ---
 layout: default
+profile: bigpic
 title: darioml
 ---
-{% comment %}
 <!--        <i class="icon-code-fork"></i> Post !-->
+
+<!-- pull some things form github here !-->
+<h2>Some Public Projects</h2>
+<div class="project">
+    <a href="https://github.com/darioml/dario-ml.com"><i class="icon-code"></i> This Website</a>
+</div>
+<div class="project">
+    <a href="http://teachback.co.uk"><i class="icon-globe"></i> TeachBack</a>
+</div>
+<!--<div class="project">
+    <a href="http://labs.hailocab.com"><i class="icon-globe"></i> Hailo Labs (design)</a>
+</div>!-->
+<div class="project">
+    <a href="https://github.com/equinoxorg"><i class="icon-code"></i> eQuinox (Standalone Project)</a>
+</div>
+<div class="project">
+    <a href="https://financesociety.co.uk"><i class="icon-globe"></i> Imperial College Finance Society</a>
+</div>
+
+<h2>Me</h2>
+<div class="activity">
+    <i class="icon-rocket"> Running</i>
+</div>
+<div class="activity">
+    <i class="icon-coffee"> Coffee</i>
+</div>
+<div class="activity">
+    <i class="icon-sun"> Swimming</i>
+</div>
+<div class="activity">
+    <i class="icon-book"> Nerding on Coursera</i>
+</div>
+
+<!-- icon-globe icon-code icon-code-fork icon-suitcase !-->
+
+
 <div class="posts">
 <h2>Posts</h2>
 {% for post in site.posts %}
     <div class="post">
-        <i class="icon-file-text-alt"></i> {{post.title}}
+        <a href="{{post.url}}"><i class="icon-file-text-alt"></i> {{post.title}}</a>
     </div>
 {% endfor %}
 </div>
-{% endcomment %}

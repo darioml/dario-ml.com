@@ -1,49 +1,122 @@
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300; }
 
+.tinytext {
+  font-size: 12px; }
+
+a {
+  text-decoration: none;
+  color: #555; }
+
 body {
   margin: 0;
   padding: 0;
   font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', 'Trade Gothic W01 Light', Helvetica, Arial, 'Lucida Grande', sans-serif;
-  font-weight: 300; }
-  body #container .profile {
-    background: #fff;
-    padding: 20px 10px 10px;
-    color: #444444; }
-    body #container .profile .selfie {
-      max-width: 70%;
-      margin: auto auto;
-      text-align: center; }
-      body #container .profile .selfie img {
-        max-width: 100%;
-        box-shadow: 0 0 5px 0 #444444; }
-    body #container .profile .passport {
-      text-align: center;
-      margin-top: 0px; }
-      body #container .profile .passport .name {
-        font-size: 25px; }
-      body #container .profile .passport .subtext {
-        color: #515151;
-        font-size: 15px; }
-        body #container .profile .passport .subtext .tinytext {
-          padding-top: 5px; }
-      body #container .profile .passport .social {
-        margin-top: 10px;
-        font-size: 35px; }
-        body #container .profile .passport .social i {
-          color: #6a6a6a; }
-        body #container .profile .passport .social a, body #container .profile .passport .social a:visited {
-          text-decoration: none;
-          margin: 0 10px; }
-  body #content {
-    padding: 20px 20px; }
-    body #content .posts h2 {
-      border-bottom: thin solid #c4c4c4;
-      padding-bottom: 15px;
-      margin-bottom: 10px; }
-    body #content .posts .post {
-      font-size: 18px;
-      padding: 15px 0; }
+  font-weight: 300;
+  background: #f0f0f0; }
 
-.tinytext {
-  font-size: 12px; }
+#content {
+  padding: 20px 20px; }
+  #content .project, #content .activity {
+    font-size: 18px;
+    padding: 10px 0;
+    color: #555; }
+  #content .posts .post {
+    font-size: 18px;
+    padding: 10px 0; }
+  #content .footer {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    color: #777777; }
+
+#container .profile {
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 0 5px 0 #444444;
+  color: #444444; }
+  #container .profile .selfie {
+    width: 20%;
+    float: left; }
+    #container .profile .selfie img {
+      max-width: 100%;
+      box-shadow: 0 0 5px 0 #444444; }
+  #container .profile .passport {
+    width: 70%;
+    float: left;
+    padding-left: 10px; }
+    #container .profile .passport .name {
+      font-size: 25px; }
+    #container .profile .passport .subtext {
+      color: #515151;
+      font-size: 15px; }
+      #container .profile .passport .subtext .tinytext {
+        display: none; }
+    #container .profile .passport .social {
+      display: none;
+      margin-top: 10px;
+      font-size: 35px; }
+      #container .profile .passport .social i {
+        color: #6a6a6a; }
+      #container .profile .passport .social a, #container .profile .passport .social a:visited {
+        text-decoration: none;
+        margin-right: 20px; }
+      #container .profile .passport .social a:last-child {
+        margin-right: 0px; }
+#container .profile.bigpic {
+  padding: 20px 10px 10px; }
+  #container .profile.bigpic .selfie {
+    float: none;
+    width: 70%;
+    margin: auto auto; }
+  #container .profile.bigpic .passport {
+    float: none;
+    width: 100%;
+    text-align: center; }
+    #container .profile.bigpic .passport .subtext .tinytext {
+      display: block; }
+    #container .profile.bigpic .passport .social {
+      display: block;
+      font-size: 45px; }
+
+@media only screen and (min-width: 561px) {
+  .mobile-only {
+    display: none; }
+
+  body #container .profile .passport .social {
+    display: block; } }
+@media only screen and (min-width: 781px) {
+  body {
+    height: 100%; }
+
+  #container .profile {
+    padding: 10px;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0; }
+    #container .profile .selfie {
+      text-align: center;
+      width: 100%; }
+    #container .profile .passport {
+      text-align: center;
+      width: 100%;
+      margin: 30px 0 0;
+      padding: 0; }
+      #container .profile .passport .subtext .tinytext {
+        display: block; }
+      #container .profile .passport .social {
+        margin-top: 30px; }
+  #container .profile.bigpic {
+    position: relative;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */ }
+  #container #content {
+    padding-top: 0;
+    margin-left: 270px;
+    max-width: 800px; } }

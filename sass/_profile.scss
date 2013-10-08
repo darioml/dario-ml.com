@@ -1,0 +1,72 @@
+#container {
+    .profile {
+        background: #fff;
+        padding: 10px;
+        box-shadow: 0 0 5px 0 $textcolor;
+        color: $textcolor;
+        .selfie {
+            width: 20%;
+            float: left;
+            img {
+                max-width: 100%;
+                box-shadow: 0 0 5px 0 $textcolor;
+            }
+        }
+        .passport {
+            width: 70%;
+            float: left;
+            padding-left: 10px;
+
+            .name{
+                font-size: 25px;
+            }
+            .subtext {
+                color: lighten($textcolor, 5);
+                font-size: 15px;
+                .tinytext {
+                    display: none;
+                }
+            }
+            .social {
+                //We're only showing this on the big profile and big devices
+                display: none;
+                i {
+                    color: lighten($textcolor, 15);
+                }
+                a, a:visited {
+                    text-decoration: none;
+                    margin-right: 20px;
+                }
+                a:last-child {
+                    margin-right: 0px;
+                }
+                margin-top: 10px;
+                font-size: 35px;
+            }
+        }
+    }
+
+
+    .profile.bigpic {
+        padding: 20px 10px 10px;
+        .selfie {
+            float: none;
+            width: 70%;
+            margin: auto auto;
+        }
+        .passport {
+            float: none;
+            width: 100%;
+            text-align: center;
+            .subtext {
+                .tinytext {
+                    display: block;
+                }
+            }
+            .social {
+                display: block;
+                font-size: 45px;
+            }
+        }
+    }
+}

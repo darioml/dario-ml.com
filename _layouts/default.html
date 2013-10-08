@@ -18,9 +18,9 @@
 <body>
 
 <div id="container">
-    <div class="profile">
+    <div class="profile{%if page.profile == 'bigpic'%} bigpic{%endif%}">
         <div class="selfie">
-            <img src="https://2.gravatar.com/avatar/7a9c124355799a0f32fd22c1a46d0fb7?d=https%3A%2F%2Fidenticons.github.com%2Fdbc04841538ba5be0e1da58be792a4cf.png&s=420" />
+            <a href="/"><img src="https://2.gravatar.com/avatar/7a9c124355799a0f32fd22c1a46d0fb7?d=https%3A%2F%2Fidenticons.github.com%2Fdbc04841538ba5be0e1da58be792a4cf.png&s=420" /></a>
         </div>
         <div class="passport">
             <div class="name">
@@ -35,11 +35,14 @@
                 <a href="https://github.com/darioml"><i class="icon-github-sign"></i></a><a href="https://twitter.com/darioaml"><i class="icon-twitter-sign"></i></a><a href="http://uk.linkedin.com/in/darioml/"><i class="icon-linkedin-sign"></i></a>
             </div>
         </div>
+        <br style="clear: both"/>
     </div>
-    <div id="content" style="text-align: center; color: #666;">
-        Website being constructed<br />
-        Stay tuned <span class="tinytext">...and follow me!<span>
+    <div id="content">
         {{content}}
+
+        {%if page.profile != 'bigpic'%}
+        <div class="footer mobile-only">Follow me <a href="https://twitter.com/darioaml">@darioaml</a></div>
+        {%endif%}
     </div>
 </div>
 
