@@ -10,7 +10,7 @@ image:
   creditlink: http://teachback.co.uk/
 ---
 
-It's been on my to-do list for a while now, but [TeachBack](http://teachback.co.uk) now finally has moved away from a wordpress installation to github pages & jekyll. Now, I'm able to push the *ever so infrequent* blog posts to the website without having to remember **another** set of login deatils[^1], dynamically give permissions, and easily work on the website without bothering with custom wordpress plugins.
+It's been on my to-do list for a while now, but [TeachBack](http://teachback.co.uk) now finally has moved away from a wordpress installation to github pages & jekyll. Now, I'm able to push the *ever so infrequent* blog posts to the website without having to remember **another** set of login details[^1], dynamically give permissions, and easily work on the website without bothering with custom wordpress plugins.
 
 [^1]: Oh, and I'm also now not paying $12/month for a VPS to hold a wordpress website!
 
