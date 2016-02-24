@@ -5,7 +5,7 @@ description: "New Jekyll website launched for teachback"
 modified: 2015-03-04
 tags: [teachback, webdev, jekyll]
 image:
-  feature: http://teachback.co.uk/images/team_hunk.png
+  feature: http://blog.teachback.co.uk/images/team_hunk.png
   credit: teachback
   creditlink: http://teachback.co.uk/
 ---
